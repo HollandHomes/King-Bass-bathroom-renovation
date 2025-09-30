@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proposal Template</title>
+    <title>Bathroom Renovation Proposal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
@@ -17,6 +17,32 @@
             border-radius: 0.5rem;
             background-color: #f9fafb;
             cursor: crosshair;
+        }
+        .material-table th, .material-table td {
+            border: 1px solid #e5e7eb;
+            padding: 10px;
+            text-align: left;
+        }
+        .material-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+        .addendum-link:hover {
+            text-decoration: underline;
+            color: #4f46e5;
+        }
+        /* CSS to ensure the addendum starts on a new page when printing */
+        @media print {
+            .addendum-start {
+                page-break-before: always;
+            }
+            .no-print {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
         }
     </style>
 </head>
@@ -42,7 +68,9 @@
             <h4 class="font-semibold text-lg mt-4">Total Material Allowance (All Projects)</h4>
             <p class="mb-6 border border-green-300 p-3 bg-green-50 rounded-md">
                 This <strong>Fixed Allowance</strong> covers the cost of <strong>all</strong> fixtures, parts, installation supplies, sales tax, and the $125 delivery/disposal fee: <strong>$2,928.05</strong>
-                <em class="block text-xs mt-1">*(A separate, itemized list of all included items is provided for your review.)*</em>
+                <em class="block text-xs mt-1">
+                    (<a href="#materials-addendum-section" class="text-indigo-600 font-semibold addendum-link">Click here to view the Itemized Breakdown.</a>)
+                </em>
             </p>
 
             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Phase 1: Project Scope & Pricing</h3>
@@ -148,22 +176,84 @@
             </div>
         </div>
 
+        <!-- START OF ITEMIZED MATERIAL ADDENDUM (Self-contained section) -->
+        <div id="materials-addendum-section" class="addendum-start mt-10 pt-6 border-t-2 border-dashed border-gray-300">
+            <header class="text-center mb-8 pb-4 border-b border-gray-300">
+                <h1 class="text-3xl font-bold text-gray-800">Itemized Material Allowance Addendum</h1>
+                <p class="text-lg text-gray-600 mt-1">Cost Breakdown for King/Bass Bathroom Renovation</p>
+                <hr class="my-4 border-gray-300">
+            </header>
+
+            <section class="mb-8">
+                <p class="text-sm text-gray-700 mb-6">
+                    This document provides the full breakdown of the **$2,928.05** Material Allowance.
+                </p>
+                
+                <h2 class="text-xl font-semibold mb-4 text-indigo-700">Itemized Material Cost Breakdown (Before Tax/Fees)</h2>
+                <table class="material-table w-full border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="w-1/4">Project Section</th>
+                            <th class="w-1/2">Item Description</th>
+                            <th class="w-1/4 text-right">Unit Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="3" class="bg-gray-100 font-semibold text-center">I. Walk-in Shower Conversion</td></tr>
+                        <tr><td>Fixture</td><td>American Standard Aspirations Shower Pan</td><td class="text-right">$389.35</td></tr>
+                        <tr><td>Fixture</td><td>American Standard Elevate Wall Set (3-Piece)</td><td class="text-right">$399.00</td></tr>
+                        <tr><td>Fixture</td><td>Lordear Semi-frameless Sliding Shower Door</td><td class="text-right">$393.54</td></tr>
+                        <tr><td>Part</td><td>Oatey 2-in PVC No-Caulk Shower Drain</td><td class="text-right">$13.88</td></tr>
+                        <tr><td>Part (Est.)</td><td>Shower Valve & Trim Kit (Quality Plumbing Fixture)</td><td class="text-right">$500.00</td></tr>
+                        <tr><td>Part (Est.)</td><td>Installation Supplies (Mortar, Caulk, Screws, etc.)</td><td class="text-right">$585.00</td></tr>
+                        
+                        <tr><td colspan="3" class="bg-gray-100 font-semibold text-center">II. Toilet Replacement</td></tr>
+                        <tr><td>Fixture</td><td>Project Source Pro-Flush Chair Height Toilet</td><td class="text-right">$99.00</td></tr>
+                        <tr><td>Part (Est.)</td><td>Toilet Installation Kit (Supply Line, Wax Ring, Bolts)</td><td class="text-right">$60.00</td></tr>
+                        
+                        <tr><td colspan="3" class="bg-gray-100 font-semibold text-center">III. Sink & Faucet Replacement</td></tr>
+                        <tr><td>Fixture</td><td>PROFLO Drop-in Round Transitional Sink</td><td class="text-right">$58.91</td></tr>
+                        <tr><td>Fixture</td><td>Pfister Masey Faucet</td><td class="text-right">$59.00</td></tr>
+                        <tr><td>Part</td><td>Novatto Pop-up Drain with Overflow</td><td class="text-right">$35.99</td></tr>
+                        <tr><td>Part</td><td>Keeney Push-to-connect P-trap</td><td class="text-right">$18.62</td></tr>
+                        <tr><td>Part (x2)</td><td>Reliabilt 3/8-in Braided Supply Line</td><td class="text-right">$14.40</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" class="text-right font-bold bg-gray-200">GRAND TOTAL MATERIAL COST (BEFORE TAX/FEES)</td>
+                            <td class="text-right font-bold bg-gray-200">$2,619.67</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-right font-bold bg-gray-200">SALES TAX ($183.38) + DELIVERY/DISPOSAL ($125.00)</td>
+                            <td class="text-right font-bold bg-gray-200">$308.38</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-right font-bold bg-indigo-200">TOTAL MATERIAL ALLOWANCE (FIXED PRICE)</td>
+                            <td class="text-right font-bold bg-indigo-200">$2,928.05</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+        <!-- END OF ITEMIZED MATERIAL ADDENDUM -->
+
+
         <div class="mt-10 pt-6 border-t-2 border-dashed border-gray-300">
-            <div class="p-4 rounded-lg bg-gray-50 text-gray-700 text-sm">
+            
+            <div class="mt-6 flex justify-center space-x-4">
+                <button onclick="window.print()" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    Save as PDF / Print
+                </button>
+            </div>
+            
+            <div class="p-4 rounded-lg bg-gray-50 text-gray-700 text-sm mt-4">
                 <p class="mb-2">To complete and return this proposal:</p>
                 <ol class="list-decimal list-inside space-y-1">
                     <li>Fill out the form and check the boxes for the projects you want.</li>
                     <li>Sign the document using the signature pad above.</li>
-                    <li>Click the button below to open the print dialog.</li>
-                    <li>In the print dialog, select "Save as PDF" as the destination to save a copy.</li>
+                    <li>Click the button above and select "Save as PDF" as the destination to save a copy.</li>
                     <li>Email the completed PDF to **TheHollandSeven@gmail.com**</li>
                 </ol>
-            </div>
-            
-            <div class="mt-6 flex justify-center space-x-4">
-                <button onclick="window.print()" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                    Save as PDF
-                </button>
             </div>
         </div>
     </div>
@@ -196,9 +286,17 @@
         const canvas = document.getElementById('signature-pad');
         const ctx = canvas.getContext('2d');
         let drawing = false;
+        
+        // Set context properties for drawing
+        ctx.lineWidth = 3;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#1f2937'; 
 
         function getMousePos(canvas, evt) {
             const rect = canvas.getBoundingClientRect();
+            // Handle touch events
+            if (evt.touches) evt = evt.touches[0];
+            
             return {
                 x: evt.clientX - rect.left,
                 y: evt.clientY - rect.top
@@ -231,9 +329,9 @@
         canvas.addEventListener('mousemove', draw);
 
         // Touch events for mobile
-        canvas.addEventListener('touchstart', (e) => startDrawing(e.touches[0]));
+        canvas.addEventListener('touchstart', startDrawing);
         canvas.addEventListener('touchend', stopDrawing);
-        canvas.addEventListener('touchmove', (e) => draw(e.touches[0]));
+        canvas.addEventListener('touchmove', draw);
         
         function clearSignature() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
