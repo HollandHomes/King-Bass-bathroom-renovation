@@ -65,16 +65,12 @@
             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Project Objective & Scope</h3>
             <p class="mb-4">This proposal outlines a <strong>Guaranteed Maximum Price (GMP)</strong> for the full renovation of your existing bathroom. The objective is to convert the tub-and-shower combination to a walk-in shower, replace the toilet with a comfort-height unit, and replace the sink basin, faucet, and associated hardware. All materials will be sourced and supplied by the Contractor.</p>
             
-            <h4 class="font-semibold text-lg mt-4">Total Material Allowance (All Projects)</h4>
-            <p class="mb-6 border border-green-300 p-3 bg-green-50 rounded-md">
-                This <strong>Fixed Allowance</strong> covers the cost of <strong>all</strong> fixtures, parts, installation supplies, sales tax, and the $125 delivery/disposal fee: <strong>$2,928.05</strong>
-                <em class="block text-xs mt-1">
-                    (<a href="#materials-addendum-section" class="text-indigo-600 font-semibold addendum-link">Click here to view the Itemized Breakdown.</a>)
-                </em>
+            <p class="mb-6 p-3 bg-blue-50 border-l-4 border-blue-500 rounded-md">
+                <strong>FIXED PRICE GUARANTEE:</strong> All prices below are comprehensive and **include the cost of materials, sales tax, and labor**. No separate material bill will be issued.
             </p>
 
             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Phase 1: Project Scope & Pricing</h3>
-            <p class="mb-6">Please check the box next to each project you would like to include. The prices below are <strong>all-inclusive</strong> for that phase (Materials + Labor).</p>
+            <p class="mb-6">Please check the box next to each project you would like to include. The prices below are <strong>all-inclusive</strong> for that phase.</p>
         </section>
 
         <div class="space-y-6">
@@ -87,6 +83,9 @@
                         <span class="text-lg font-semibold text-gray-900 block">1. Tub-to-Walk-in Shower Conversion</span>
                         <p class="text-gray-600 mt-1">
                             <strong>Scope:</strong> Complete removal and disposal of the existing tub and surround. Installation of the new prefabricated shower pan in a mortar bed, three-piece wall system, shower door, and a new shower valve assembly. Includes all necessary plumbing adjustments to relocate the shower valve.
+                        </p>
+                        <p class="text-sm mt-2 text-gray-700">
+                            (Includes $2,280.77 Material Cost + Labor Fee)
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">4,655.77</span></span>
                     </span>
@@ -102,7 +101,10 @@
                     <span class="ml-4 flex-1 text-base">
                         <span class="text-lg font-semibold text-gray-900 block">2. Comfort-Height Toilet Replacement</span>
                         <p class="text-gray-600 mt-1">
-                            <strong>Scope:</strong> Removal and disposal of the existing toilet. Installation and testing of the new comfort-height toilet, including all new installation supplies (wax ring, supply line, bolts).
+                            <strong>Scope:</strong> Removal and disposal of the existing toilet. Installation and testing of the new comfort-height toilet, including all new installation supplies.
+                        </p>
+                        <p class="text-sm mt-2 text-gray-700">
+                            (Includes $159.00 Material Cost + Labor Fee)
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">305.58</span></span>
                     </span>
@@ -118,7 +120,10 @@
                     <span class="ml-4 flex-1 text-base">
                         <span class="text-lg font-semibold text-gray-900 block">3. Sink Basin & Faucet Replacement</span>
                         <p class="text-gray-600 mt-1">
-                            <strong>Scope:</strong> Removal of the existing sink basin and faucet while retaining the existing countertop. Installation and testing of the new drop-in sink basin, faucet, pop-up drain, P-trap, and new supply lines.
+                            <strong>Scope:</strong> Removal of the existing sink basin and faucet. Installation and testing of the new drop-in sink basin, faucet, pop-up drain, P-trap, and new supply lines.
+                        </p>
+                        <p class="text-sm mt-2 text-gray-700">
+                            (Includes $179.90 Material Cost + Labor Fee)
                         </p>
                         <span class="text-xl font-bold text-green-700 mt-2 block">$<span class="price-display">621.70</span></span>
                     </span>
@@ -186,7 +191,7 @@
 
             <section class="mb-8">
                 <p class="text-sm text-gray-700 mb-6">
-                    This document provides the full breakdown of the **$2,928.05** Material Allowance.
+                    This document provides the full breakdown of the **$2,928.05** Material Allowance used in the proposal pricing.
                 </p>
                 
                 <h2 class="text-xl font-semibold mb-4 text-indigo-700">Itemized Material Cost Breakdown (Before Tax/Fees)</h2>
